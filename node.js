@@ -19,24 +19,26 @@ console​ .log(​ "La couleur est jaune"​ );
 console​ .log(​ `La couleur était: ​ ${couleur}​ ` ​ );
 }*/
 
-let tablalColor = ["bleu","rouge","jaune","vert"];
-for (let index){
-   switch (tablalColor) {
+let tablalColor = ["bleu","rouge","jaune","vert","blue"];
+for (let index = 0; index >= tablalColor.length;index++){
+   switch (tablalColor[index]) {
        case "bleu":
-            console.log(`La couleur à l'index ${index} est : bleu`);       
+            console.log(`La couleur à l'index ${index} est : [0]`);       
            break;
         case "rouge":
-            console.log(`La couleur à l'index ${index} est : rouge`);
+            console.log(`La couleur à l'index ${index} est : [1]`);
             break;
         case "jaune":
-            console.log(`La couleur à l'index ${index} est : jaune`);
+            console.log(`La couleur à l'index ${index} est : [2]`);
             break;
         case "jaune":
-            console.log(`La couleur à l'index ${index} est : vert`);
+            console.log(`La couleur à l'index ${index} est : [3]`);
             break;
    
        default:
            console.log(`La couleur [tablalColor] n'était pas attendue`);
+            console.log("test")
            break;
+           
    }
 }
