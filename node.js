@@ -75,7 +75,7 @@ const player = {
     listSac:["un stylo", "une choucroute"],
 
     description() {
-        return (`Je suis un ${this.sexe}, je m'appelle ${this.nom} ${this.prénom}, aujourd'hui je suis habillé ${this.tenue}, je porte un sac à dos qui contient ${this.listSac}`)
+        return (`Je suis un ${this.sexe}, je m'appelle ${this.nom} ${this.prénom}, aujourd'hui je suis habillé ${this.tenue}, je porte un sac à dos qui contient : \n` ${this.listSac.forEach(elemet => console.log(element + `\n`)});
     }
 };
 console.log(player.description());
